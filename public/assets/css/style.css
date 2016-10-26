@@ -8,3 +8,11 @@ body {
 h1{
     text-align: center;
 }
+
+#addUser{
+    float: right;
+}
+
+#logout{
+    float: right;
+}

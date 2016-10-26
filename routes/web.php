@@ -15,8 +15,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/', 'ProfileController@index');
     Route::get('/profile', 'ProfileController@index');
     Route::resource('/profile/tasks', 'TaskController');
+    Route::get('logout', 'Auth\LoginController@logout');
 });
 
+Route::patch('/change-password', 'ProfileController@changePassword');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index');

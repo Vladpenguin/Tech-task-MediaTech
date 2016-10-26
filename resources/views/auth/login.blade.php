@@ -55,7 +55,10 @@
                                 </button>
 
                                 <a class="btn btn-link" href="{{ url('/password/reset') }}">
-                                    Forgot Your Password?
+                                    Change manually
+                                </a>
+                                <a id="change_pass" class="btn btn-link" href="#">
+                                    Change automatically
                                 </a>
                             </div>
                         </div>
@@ -65,4 +68,27 @@
         </div>
     </div>
 </div>
+<div id="form_modal" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Смена пароля</h4>
+            </div>
+            <div class="modal-body">
+                <form id="changeEmail">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="emailToSend" aria-describedby="email" placeholder="Type your email" name="email" value="">
+                    </div>
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" id="token">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="changePassword" type="button" class="btn btn-primary">Отправить</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 @endsection

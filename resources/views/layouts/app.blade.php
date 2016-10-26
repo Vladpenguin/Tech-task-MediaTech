@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link href="/assets/css/app.css" rel="stylesheet">
+    <link href="/assets/css/amaran.min.css" rel="stylesheet">
+    <link href="/assets/css/animate.min.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -82,6 +84,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script scr="/assets/js/jquery-2.2.2.min.js"></script>
+    <script src="https://use.fontawesome.com/dd4c99c434.js"></script>
+    <script src="/assets/js/jquery.amaran.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
